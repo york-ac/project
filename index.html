@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project</title>
+    <link rel="stylesheet" href="./src/styles/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="font-[Poppins] h-screen">
+
+
+    <header class="flex justify-between items-center px-6 bg-gray-900 text-white h-20">
+
+
+        <nav class="flex justify-between items-center w-[95%] mx-auto">
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="50px"
+                    width="50px" version="1.1" id="Layer_1" viewBox="0 0 392.597 392.597" xml:space="preserve">
+                    <path style="fill:#56ACE0;"
+                        d="M334.642,223.935c0,0,14.352,1.422,14.352-10.925V54.497c0-6.012-4.848-10.925-10.925-10.925H54.594  c-6.012,0-10.925,4.848-10.925,10.925v158.578c0,6.012,4.848,10.925,10.925,10.925h117.01" />
+                    <g>
+                        <path style="fill:#194F82;"
+                            d="M322.165,80.614H70.432c-6.012,0-10.925-4.848-10.925-10.925c0-6.012,4.848-10.925,10.925-10.925   h251.733c6.012,0,10.925,4.848,10.925,10.925C333.091,75.701,328.113,80.614,322.165,80.614z" />
+                        <path style="fill:#194F82;"
+                            d="M322.165,127.483H70.432c-6.012,0-10.925-4.848-10.925-10.925c0-6.012,4.848-10.925,10.925-10.925   h251.733c6.012,0,10.925,4.848,10.925,10.925C333.091,122.634,328.113,127.483,322.165,127.483z" />
+                        <path style="fill:#194F82;"
+                            d="M149.301,180.558H70.432c-6.012,0-10.925-4.848-10.925-10.925c0-6.012,4.848-10.925,10.925-10.925   h78.869c6.012,0,10.925,4.848,10.925,10.925C160.226,175.709,155.313,180.558,149.301,180.558z" />
+                        <path style="fill:#194F82;"
+                            d="M359.79,0H32.808C14.707,0,0.032,14.675,0.032,32.711v202.15c0,18.036,14.675,32.711,32.711,32.711   h153.147v26.246c0,6.012,4.848,10.925,10.925,10.925h14.287v76.865c-0.323,7.628,9.051,14.61,17.648,8.598l24.436-19.071   l24.436,19.071c7.758,5.56,17.39,0.905,17.648-8.598v-76.929h14.158c6.012,0,10.925-4.848,10.925-10.925v-26.246h39.499   c18.036,0,32.711-14.675,32.711-32.711V32.711C392.565,14.675,377.891,0,359.79,0z M273.293,359.24l-13.511-10.602   c-3.943-3.103-9.503-3.103-13.446,0l-13.511,10.602v-46.933l12.541,12.541c5.172,4.655,10.796,4.008,15.451,0l12.541-12.541   L273.293,359.24L273.293,359.24z M301.672,253.156c-2.004,2.004-3.168,4.784-3.168,7.758v22.109H276.46   c-2.844,0-5.624,1.164-7.758,3.168l-15.58,15.58l-15.644-15.644c-2.004-2.004-4.784-3.168-7.758-3.168h-22.109v-22.109   c0-2.844-1.164-5.624-3.168-7.758l-15.58-15.58l15.58-15.58c2.004-2.004,3.168-4.784,3.168-7.758v-22.109h22.109   c2.844,0,5.624-1.164,7.758-3.168l15.58-15.58l15.58,15.58c2.004,2.004,4.784,3.168,7.758,3.168h22.109v22.109   c0,2.844,1.164,5.624,3.168,7.758l15.58,15.58L301.672,253.156z M370.78,234.796c0,6.012-4.848,10.925-10.925,10.925h-19.911   c0,0,9.051-7.434,0.517-15.968l-20.17-20.17v-28.509c0-6.012-4.849-10.925-10.925-10.925h-28.509l-20.105-20.105   c-4.267-4.267-11.119-4.267-15.451,0l-20.105,20.105h-28.509c-6.012,0-10.925,4.848-10.925,10.925v28.509l-20.17,20.17   c-8.339,8.339,0.517,15.968,0.517,15.968H32.808c-6.012,0-10.925-4.848-10.925-10.925V32.711c0-6.012,4.848-10.925,10.925-10.925   h327.111c6.012,0,10.925,4.848,10.925,10.925v202.085H370.78z" />
+                    </g>
+                    <path style="fill:#FFFFFF;"
+                        d="M245.365,324.849l-12.541-12.541v46.933l13.511-10.602c3.943-3.103,9.503-3.103,13.446,0  l13.511,10.602v-46.804l-12.477,12.477C256.291,328.857,250.537,329.503,245.365,324.849z" />
+                    <path style="fill:#FFC10D;"
+                        d="M301.672,253.156l15.58-15.58l-15.58-15.644c-2.004-2.004-3.168-4.784-3.168-7.758v-22.109H276.46  c-2.844,0-5.624-1.164-7.758-3.168l-15.58-15.58l-15.58,15.58c-2.004,2.004-4.784,3.168-7.758,3.168h-22.109v22.109  c0,2.844-1.164,5.624-3.168,7.758l-15.58,15.58l15.58,15.58c2.004,2.004,3.168,4.784,3.168,7.758v22.109h22.109  c2.844,0,5.624,1.164,7.758,3.168l15.58,15.58l15.58-15.58c2.004-2.004,4.784-3.168,7.758-3.168h22.109v-22.109  C298.505,257.939,299.604,255.16,301.672,253.156z" />
+                </svg>
+            </div>
+
+
+            <div
+                class=" nav-links duration-500 md:static absolute bg-black md:bg-gray-900 md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-7">
+                    <li><a href="" class="text-2xl hover:underline hover:text-softGray active:bg-highlight">ABOUT ME</a>
+                    </li>
+                    <li><a href="" class="text-2xl hover:underline hover:text-softGray active:bg-highlight">SKILLS</a>
+                    </li>
+                    <li><a href="" class="text-2xl hover:underline hover:text-softGray active:bg-highlight">PROJECTS</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <a href="#"
+                    class="inline-flex items-center justify-center px-0.5 py-1 md:px-6 md:py-1.5 text-base font-medium text-softGray rounded-lg bg-deepBlue hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-neonGreen dark:hover:text-white active:bg-softGray">
+                    <span class="w-full text-2xl">CONTACT</span> <svg class="w-8 h-8 me-4 -rotate-45" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px"
+                        width="800px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                        <circle style="fill:#FFD15D;" cx="256" cy="256" r="256" />
+                        <path style="fill:#F9B54C;"
+                            d="M511.986,257.072L384.338,129.424L205.174,334.465l-76.35,49.299l128.224,128.224  C397.591,511.422,511.409,397.614,511.986,257.072z" />
+                        <path style="fill:#31BAFD;"
+                            d="M153.715,118.088h204.571c19.677,0,35.628,15.951,35.628,35.626v204.571  c0,19.677-15.951,35.628-35.626,35.628H153.717c-19.677,0-35.628-15.951-35.628-35.626V153.715  C118.088,134.039,134.039,118.088,153.715,118.088z" />
+                        <path style="fill:#2B9ED8;"
+                            d="M118.089,255.426v102.86c0,19.677,15.951,35.626,35.628,35.626h204.571  c19.677,0,35.628-15.951,35.626-35.628v-102.86H118.089V255.426z" />
+                        <polygon style="fill:#324A5E;"
+                            points="223.794,362.467 195.756,334.429 274.189,256 195.758,177.571 223.796,149.533 330.264,256   " />
+                        <polygon style="fill:#2B3B4E;"
+                            points="273.615,255.426 274.189,256 195.756,334.429 223.794,362.467 330.264,256 329.688,255.426   " />
+                    </svg>
+                </a>
+
+            </div>
+
+
+
+            <div class="flex items-center gap-6">
+
+                <button class="cursor-pointer hover:bg-softGray inline-flex items-center md:hidden">
+                    <ion-icon onclick="ontoggleMenu(this)" name="close"
+                        class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </button>
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function ontoggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+
+    </script>
+
+
+    <main class="">
+        <section
+            class=" h-[100lvh - 52px] flex justify-center items-center bg-radial-[at_50%_75%] from-[#FFD700] via-blue-400 to-deepBlue to-90% ">
+            <div class="px-4 pb-4 h-full mt-10 md:mt-12 text-white font-stretch-50%">
+
+                <!-- <div class="bg-[rgba(0,0,0,0.309)] w-80 px-32 text-white items-center ">
+                    <h1 class="text-4xl mb-4">I'm York Antayhua Cortez<br>Software Engineer</h1>
+
+                    <h2 class="text-2xl">Full Stack Developer</h2>
+
+                </div> -->
+
+                <div class="bg-[rgba(0,0,0,0.309)] py-6 px-3 md:py-5 md:px-4">
+                    <h4 class="text-center rounded-md text-lg md:text-2xl font-semibold">I'm
+                        here
+                    </h4>
+
+                    <h1 class="text-center text-3xl md:text-7xl font-semibold">I'm <span class="text-amber-400"><em>York
+                                Antayhua</em></span></h1>
+
+                    <h2 class="text-center text-2xl md:text-5xl mt-3 md:mt-4">Full Stack Developer</h2>
+
+                </div>
+
+                <div class="relative">
+                    <img src="./src/images/hero_photo.png" alt="Photo" class="h-[400px] md:h-[720px]" />
+                    <button
+                        class="absolute bottom-8 left-12 md:bottom-12 md:left-34 text-center cursor-pointer mt-0 px-0.5 py-2 md:px-6 md:py-1.5 text-3xl font-medium text-dark rounded-3xl bg-amber-400 dark:hover:bg-neonGreen dark:hover:text-white active:bg-[#31BAFD]">My
+                        Projects</button>
+                </div>
+
+                <!-- <div class="justify-center items-center flex relative">
+                    <button
+                        class="text-center cursor-pointer mt-0 px-0.5 py-2 md:px-6 md:py-1.5 text-3xl font-medium text-dark rounded-3xl bg-amber-400 dark:hover:bg-neonGreen dark:hover:text-white active:bg-[#31BAFD]">My
+                        Projects</button> -->
+
+            </div>
+
+
+
+
+
+            <!-- <article class="">
+                <div class="w-full flex md:flex-col justify-center gap-5 bg-gray-900 z-12 mt-12 py-6">
+                    <div
+                        class=" md:px-15 md:py-5 md:rotate-12 md:mt-75 md:ml-70 bg-[rgba(0,0,0,0.8)] flex flex-col items-center md:items-end">
+
+                        <h3 class="text-xl md:text-2xl text-white text-center font-semibold">MY EXPERTISE</h3>
+
+                        <div class="space-y-5 w-[18rem] mt-6"> -->
+
+
+
+
+            <!-- Progress -->
+
+            <!-- 
+                            <div>
+                                <div class="mb-2 flex justify-between items-center">
+                                    <h3 class="text-xl font-semibold text-white">Backend</h3>
+                                    <span class="text-xl text-white">25%</span>
+                                </div>
+                                <div class="flex w-full h-3 bg-gray-200 rounded-full overflow-hidden" role="progressbar"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500"
+                                        style="width: 25%"></div>
+                                </div>
+                            </div> -->
+
+
+
+            <!-- End Progress -->
+
+            <!-- Progress -->
+            <!-- <div>
+                <div class="mb-2 flex justify-between items-center">
+                    <h3 class="text-xl font-semibold text-white">Frontend</h3>
+                    <span class="text-xl text-white">50%</span>
+                </div>
+                <div class="flex w-full h-3 bg-gray-200 rounded-full overflow-hidden" role="progressbar"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500"
+                        style="width: 50%"></div>
+                </div>
+            </div> -->
+            <!-- End Progress -->
+
+            <!-- Progress -->
+            <!-- <div>
+                <div class="mb-2 flex justify-between items-center">
+                    <h3 class="text-xl font-semibold text-white">Machine Learning</h3>
+                    <span class="text-xl text-white">75%</span>
+                </div>
+                <div class="flex w-full h-3 bg-gray-200 rounded-full overflow-hidden" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500"
+                        style="width: 75%"></div>
+                </div>
+            </div> -->
+            <!-- End Progress -->
+
+            <!-- Progress -->
+            <!-- <div>
+                <div class="mb-2 flex justify-between items-center">
+                    <h3 class="text-xl font-semibold text-white">Progress title</h3>
+                    <span class="text-xl text-white">100%</span>
+                </div>
+                <div class="flex w-full h-3 bg-gray-200 rounded-full overflow-hidden" role="progressbar"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500"
+                        style="width: 100%"></div>
+                </div>
+            </div> -->
+            <!-- End Progress -->
+            <!-- </div>
+
+
+            </div>
+
+
+            </div>
+
+            </article> -->
+
+            <article>
+
+            </article>
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+        <section>
+            <div>
+                <h2>WHO AM I?</h2>
+
+                <p><strong>I am a web development developer</strong> passionated in developing webpages. <em>I am really
+                        into
+                        Machine Learning and
+                        Artificial Intelligence</em></p>
+
+                <button>SHOW MY PROJECTS</button>
+
+            </div>
+        </section>
+
+
+        <section>
+
+            <div>
+                <h2>MY SKILLS</h2>
+
+                <div>
+                    <!-- Aquí tengo que hacer la cuadrícula -->
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section>
+            <div>
+                <h2>ADDITIONAL SKILLS</h2>
+
+                <div>
+                    <!-- Aquí van las fotos de las tecnologías que manejo con flex -->
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <div>
+                <div>
+                    <h2>THE WORKS CLOSEST TO MY HEART</h2>
+
+                    <button>SHOW MY PROJECTS</button>
+                </div>
+
+                <div>
+                    <article>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                        <footer>
+                            <h3>Plumbing Company</h3>
+                        </footer>
+
+                    </article>
+
+                    <article>
+                        <div>
+                            <img src="" alt="">
+
+
+                        </div>
+
+                        <footer>
+                            <h3>dvdcdcdcdc</h3>
+                        </footer>
+
+                    </article>
+
+
+                    <article>
+                        <div>
+                            <img src="" alt="">
+
+                        </div>
+                        <footer>
+                            <h3>dcdcdcdcdc</h3>
+                        </footer>
+
+                    </article>
+
+                    <!-- sistema acordion con flex, poner ancho definido. lo hijos se adaptan al padre -->
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+
+            <div>
+                <form action="">
+                    <h3>LET'S HAVE A CHAT</h3>
+                    <input type="text" placeholder="YOUR NAME">
+                    <input type="text" placeholder="YOUR NAME">
+                    <textarea name="chat" id="chat" placeholder="CHAT HERE"></textarea>
+
+                    <button>SUBMIT HERE</button>
+
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>
