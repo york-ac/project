@@ -843,6 +843,9 @@
   .to-100\% {
     --tw-gradient-to-position: 100%;
   }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
   .p-40 {
     padding: calc(var(--spacing) * 40);
   }
