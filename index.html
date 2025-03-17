@@ -16,6 +16,8 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    <script defer src="./src/scripts/script.js"></script>
+
 </head>
 
 <body class="font-[Poppins] h-screen">
@@ -52,18 +54,21 @@
             <div
                 class=" nav-links duration-500 md:static absolute bg-black md:bg-gray-900 md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-7">
-                    <li><a href="" class="text-2xl hover:underline hover:text-softGray active:bg-highlight">ABOUT ME</a>
+                    <li><a href="#Me" class="text-2xl hover:underline hover:text-softGray active:bg-highlight">ABOUT
+                            ME</a>
                     </li>
-                    <li><a href="" class="text-2xl hover:underline hover:text-softGray active:bg-highlight">SKILLS</a>
+                    <li><a href="#Skills"
+                            class="text-2xl hover:underline hover:text-softGray active:bg-highlight">SKILLS</a>
                     </li>
-                    <li><a href="" class="text-2xl hover:underline hover:text-softGray active:bg-highlight">PROJECTS</a>
+                    <li><a href="#Projects"
+                            class="text-2xl hover:underline hover:text-softGray active:bg-highlight">PROJECTS</a>
                     </li>
                 </ul>
 
             </div>
 
             <div>
-                <a href="#"
+                <a href="#Contact"
                     class="inline-flex items-center justify-center px-0.5 py-1 md:px-6 md:py-1.5 text-base font-medium text-softGray rounded-lg bg-deepBlue hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-neonGreen dark:hover:text-white active:bg-softGray">
                     <span class="w-full text-2xl">CONTACT</span> <svg class="w-8 h-8 me-4 -rotate-45" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px"
@@ -100,15 +105,6 @@
 
     </header>
 
-
-    <script>
-        const navLinks = document.querySelector('.nav-links')
-        function ontoggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[9%]')
-        }
-
-    </script>
 
 
     <main class="">
@@ -252,7 +248,9 @@
 
 
 
-        <section>
+
+
+        <section id="Me">
             <div>
                 <h2>WHO AM I?</h2>
 
@@ -267,7 +265,7 @@
         </section>
 
 
-        <section>
+        <section id="Skills">
 
             <div>
                 <h2>MY SKILLS</h2>
@@ -294,7 +292,7 @@
         </section>
 
 
-        <section>
+        <section id="Projects">
             <div>
                 <div>
                     <h2>THE WORKS CLOSEST TO MY HEART</h2>
@@ -345,7 +343,7 @@
         </section>
 
 
-        <section>
+        <section id="Contact">
 
             <div>
                 <form action="">
